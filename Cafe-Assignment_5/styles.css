@@ -1,0 +1,330 @@
+/* Importing google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* background: #7a85c0; */
+}
+
+li,
+a,
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: #24252a;
+}
+.nav-bar {
+  display: flex;
+}
+
+.logo {
+  height: 80px;
+  width: 80px;
+  border-radius: 40px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+.nav_links {
+  list-style: none;
+}
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+}
+.nav_links li a:hover {
+  color: #0088a9;
+}
+button {
+  padding: 9px 25px;
+  border-radius: 50px;
+  background-color: rgba(0, 136, 139, 1);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+button:hover {
+  background-color: rgba(0, 136, 139, 0.8);
+}
+
+/* footer */
+
+/* Apply the styles to the footer */
+footer {
+  background-color: #24252a; /* Dark background color */
+  color: white; /* Text color */
+  padding: 20px 0; /* Adjust padding for better spacing */
+}
+
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.socialIcons {
+  margin: 20px 0;
+}
+
+.socialIcons a {
+  padding: 10px;
+  background-color: #fff; /* White background for better visibility */
+  text-decoration: none;
+  border-radius: 50%;
+  margin: 10px;
+  color: #24252a; /* Text color for icons */
+  font-size: 1.5em; /* Adjust the font size */
+}
+
+.socialIcons a:hover {
+  background-color: black; /* Darken on hover */
+  transition: 0.5s;
+}
+
+.footerNav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.footerNav ul li a {
+  margin: 10px 20px; /* Adjust margins for spacing */
+  color: white;
+  text-decoration: none;
+  opacity: 0.7;
+  font-size: 1.3em;
+  transition: 0.3s; /* Add smooth transition */
+}
+
+.footerNav ul li a:hover {
+  opacity: 1;
+}
+
+.footerBottom p {
+  margin: 10px 0; /* Adjust margin for spacing */
+}
+
+
+
+
+
+
+
+
+.imagebanner {
+  height: 600px;
+  display: flex;
+}
+
+
+
+
+
+
+
+.gallery_videos {
+  height:600px;
+  width:100%;
+  border-radius: 20px;
+}
+
+
+.heading {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  font-size: 22px;
+}
+
+.sectionheading {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.section {
+  background-color: #e0e8f0;
+  margin-bottom: 30px;
+  padding: 30px;
+  width: 100%;
+  border: 1px solid #000;
+}
+
+
+
+
+.about {
+  display: flex;
+}
+
+.pagecontent {
+  padding: 0px 40px;
+}
+
+
+
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Three equal-width columns */
+  grid-gap: 80px; /* Space between columns */
+}
+
+.aboutimage{
+  height: 380px;
+  width:100%;
+  border-radius: 20px;
+  margin-top: 20px;
+
+  justify-items: center; /* Center elements horizontally */
+  align-items: center;
+}
+.aboutdescription{
+  font-style: italic;
+  font-size: 20px;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu-item {
+  width: 260px;
+  margin: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  transition: transform 0.2s;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item:hover {
+  transform: scale(1.05);
+}
+
+.menu-image {
+  max-width: 100%;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.menu-description {
+  font-size: 16px;
+  color: #777;
+}
+
+.menu-price {
+  font-size: 16px;
+  color: #333;
+}
+
+
+.reviews {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px; /* Increased the spacing between items */
+    grid-auto-rows: auto; /* Allow rows to expand based on content */
+}
+
+.review {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px; /* Increased padding for each review */
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.2s;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.review:hover {
+    transform: scale(1.05);
+}
+
+.user-image {
+    max-width: 150px; /* Increased the size of user images */
+    border-radius: 50%;
+    margin: 0 auto 15px; /* Increased the margin for user images */
+}
+
+.user-name {
+    font-size: 25px;
+    margin: 0;
+    color: #333;
+}
+
+.review-text {
+    font-size: 20px;
+    color: #777;
+}
+
+
+
+
+
+#marquee-container {
+  display: flex;
+  overflow: hidden;
+}
+
+.marquee-items {
+  display: flex;
+  
+ 
+}
+
+.marquee-item {
+  flex: 0 0 auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.marquee-item p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.marquee-item img {
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.tagline{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-size:50px;
+}
+.taglinedes{
+  font-family: "Montserrat", sans-serif;
+    font-weight: 50;
+    font-size: 20px;
+}
+.tag{
+  padding: 40px;
+}
+
+

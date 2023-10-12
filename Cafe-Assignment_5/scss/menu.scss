@@ -1,0 +1,127 @@
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .menu-item {
+    width: 260px;
+    margin: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.2s;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .menu-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .menu-image {
+    max-width: 100%;
+    height: 200px;
+    border-radius: 10px;
+  }
+  
+  .menu-description {
+    font-size: 16px;
+    color: #777;
+  }
+  
+  .menu-price {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  
+  .reviews {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 30px; /* Increased the spacing between items */
+      grid-auto-rows: auto; /* Allow rows to expand based on content */
+  }
+  
+  .review {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 20px; /* Increased padding for each review */
+      border-radius: 5px;
+      text-align: center;
+      transition: transform 0.2s;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .review:hover {
+      transform: scale(1.05);
+  }
+  
+  .user-image {
+      max-width: 150px; /* Increased the size of user images */
+      border-radius: 50%;
+      margin: 0 auto 15px; /* Increased the margin for user images */
+  }
+  
+  .user-name {
+      font-size: 25px;
+      margin: 0;
+      color: #333;
+  }
+  
+  .review-text {
+      font-size: 20px;
+      color: #777;
+  }
+  
+  
+  
+  
+  
+  #marquee-container {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .marquee-items {
+    display: flex;
+    
+   
+  }
+  
+  .marquee-item {
+    flex: 0 0 auto;
+    text-align: center;
+    padding: 0 20px;
+  }
+  
+  .marquee-item p {
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .marquee-item img {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+  
+  .tagline{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    font-size:50px;
+  }
+  .taglinedes{
+    font-family: "Montserrat", sans-serif;
+      font-weight: 50;
+      font-size: 20px;
+  }
+  .tag{
+    padding: 40px;
+  }
+  
+  
+  

@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&display=swap");
+
+
+
+// Define the px-to-ex function
+// Function
+@function px-to-ex($px-value, $font-size: 16px) {
+    @return ($px-value / $font-size) * 1ex;
+  }
+  
+$font-size: 45px; 
+
+// Use the px-to-ex function within SASS/SCSS variables
+$heading-font-size: px-to-ex(24px, $font-size);
+
+
+
+
+
+
+
+
+
+
+
+// Variables
+$primary-color: #0088a9;
+$bg-color: #e0e8f0;
+$text-color: #24252a;
+$font-family: "Montserrat", sans-serif;
+$font-weight: 500;
+$font-size: 16px;
+
+li, a, button {
+  font-family: $font-family;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  color: $text-color;
+}
+
+
+
+// Placeholder Selector
+%button-styles {
+    padding: 9px 25px;
+    padding: 9px 25px;
+  border-radius: 50px;
+  background-color: rgba(0, 136, 139, 1);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  }
+button {
+    @extend %button-styles;
+}
+button:hover {
+  background-color: rgba(0, 136, 139, 0.8);
+}
+
+
+
+.imagebanner {
+  height: 600px;
+  display: flex;
+}
+
+
+
+.gallery_videos {
+  height:600px;
+  width:100%;
+  border-radius: 20px;
+}
+
+
+.heading {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  font-size: 22px;
+}
+
+.sectionheading {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: $heading-font-size;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+
+
+.about {
+  display: flex;
+}
+
+.pagecontent {
+  padding: 0px 40px;
+}
+
+
+
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Three equal-width columns */
+  grid-gap: 80px; /* Space between columns */
+}
+
+.aboutimage{
+  height: 380px;
+  width:100%;
+  border-radius: 20px;
+  margin-top: 20px;
+
+  justify-items: center; /* Center elements horizontally */
+  align-items: center;
+}
+.aboutdescription{
+  font-style: italic;
+  font-size: 20px;
+}

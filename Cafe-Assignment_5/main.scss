@@ -1,0 +1,11 @@
+@import 'scss/homepage.scss';
+@import 'scss/menu.scss';
+
+@import 'scss/header.scss';
+@import 'scss/footer.scss';
+@import 'scss/layout.scss';
+
+// Define a custom property for the section color
+:root {
+  --section-color: #e0e8f0; // You can set your desired color value
+}
